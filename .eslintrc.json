@@ -1,0 +1,43 @@
+{
+  "plugins": [
+    "eslint-plugin-import-helpers"
+  ],
+  "extends": [
+    "@rocketseat/eslint-config/next",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "@typescript-eslint/no-empty-function": "off",
+    "@next/next/no-img-element": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          [
+            "/^vitest/",
+            "/^@testing-library/",
+            "/^react-dom/"
+          ],
+          [
+            "/^react/",
+            "/^next/"
+          ],
+          "module",
+          [
+            "/^@/core/",
+            "/^@/components/",
+            "/^@/store/",
+            "/^@/utils/",
+            "/^@/mocks/"
+          ],
+          [
+            "parent",
+            "sibling",
+            "index"
+          ]
+        ]
+      }
+    ]
+  }
+}
