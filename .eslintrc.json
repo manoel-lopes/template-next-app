@@ -13,24 +13,16 @@
       "warn",
       {
         "newlinesBetween": "always",
+        "alphabetize": { "order": "desc", "ignoreCase": true },
         "groups": [
-          [
-            "/^vitest/",
-            "/^@testing-library/",
-            "/^react-dom/"
-          ],
-          [
-            "/^react/",
-            "/^next/"
-          ],
+          ["/^vitest/", "/^@testing-library/"],
+          ["/^react/", "/^next/"],
           "module",
-          [
             "/^@/core/",
             "/^@/components/",
             "/^@/store/",
             "/^@/utils/",
-            "/^@/mocks/"
-          ],
+            "/^@/mocks/",
           [
             "parent",
             "sibling",
