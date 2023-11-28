@@ -17,6 +17,8 @@
         "groups": [
           ["/^vitest/", "/^@testing-library/", "/^react-dom/"],
           ["/^react/", "/^next/"],
+          ["/^vite/", "/^@vitejs/"],
+          "/^node/",
           "module",
           [
             "/^@/core/",
