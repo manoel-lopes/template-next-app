@@ -9,20 +9,22 @@
   "rules": {
     "@typescript-eslint/no-empty-function": "off",
     "@next/next/no-img-element": "off",
+    "no-useless-constructor": "off",
     "import-helpers/order-imports": [
       "warn",
       {
         "newlinesBetween": "always",
-        "alphabetize": { "order": "desc", "ignoreCase": true },
         "groups": [
-          ["/^vitest/", "/^@testing-library/"],
+          ["/^vitest/", "/^@testing-library/", "/^react-dom/"],
           ["/^react/", "/^next/"],
           "module",
+          [
             "/^@/core/",
             "/^@/components/",
             "/^@/store/",
             "/^@/utils/",
-            "/^@/mocks/",
+            "/^@/mocks/"
+          ],
           [
             "parent",
             "sibling",
